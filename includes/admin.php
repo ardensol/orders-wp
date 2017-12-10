@@ -48,6 +48,17 @@ function restaurantops_options_page()
                     </td>
                 </tr>
             </table>
+            <table class="form-table" cellspacing="2" cellpadding="5" width="100%">
+                <tr>
+                    <th valign="top" style="padding-top: 10px;">
+                        <label for="RestaurantOps_widget_code">RestaurantOps JS code snippet:</label>
+                    </th>
+                    <td>
+                        <textarea rows="15" cols="100" placeholder="<!-- Insert the RestaurantOps tag here -->" name="RestaurantOps_settings[restaurantops_widget_code]"><?php echo esc_attr( $options['restaurantops_widget_code'] ); ?></textarea>
+                        <p style="margin: 5px 10px;">Enter your RestaurantOps JS code snippet.  You can find your <a href="https://orders.restaurantops.co" target="_blank" title="Open RestaurantOps Settings">RestaurantOps JS code snippet here</a>. A Free RestaurantOps account is required to use this plugin.</p>
+                    </td>
+                </tr>
+            </table>
             <p class="submit">
                 <?php echo submit_button('Save Changes'); ?>
             </p>
